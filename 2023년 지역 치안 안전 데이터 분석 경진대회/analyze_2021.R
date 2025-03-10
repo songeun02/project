@@ -15,7 +15,8 @@ data2021_1
 View(data2021_1)
 dim(data2021_1)
 
-data2021_1_daejeon <- subset(data2021_1,NPA_CL=='13') # 경찰청구분 = 대전 
+# 경찰청구분 = 대전 
+data2021_1_daejeon <- subset(data2021_1,NPA_CL=='13') 
 View(data2021_1_daejeon)
 
 data2021_daejeon_excpet_HPPN_NA <- subset(data2021_1_daejeon,HPPN_Y != 'NA')
